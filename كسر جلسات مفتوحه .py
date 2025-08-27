@@ -54,7 +54,7 @@ os.makedirs(SETTINGS_FOLDER, exist_ok=True)
 
 
 users = {
-    "qev?u&4knUquNm5s": "Mohamed Al-Ahly"
+    "qev?u&4knUquNm5sxxx": "Mohamed Al-Ahly"
 }
 
 
