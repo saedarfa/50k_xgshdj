@@ -27,33 +27,26 @@ B = Fore.BLUE
 s=("□■"*30)
 m=("□■"*30)
 g=("□■"*30)
-
+SK = pyfiglet.figlet_format('                TEAM')
+saa = pyfiglet.figlet_format('       ALKAPOS')
+sk2=pyfiglet.figlet_format('        VODAFONE')
+alkapos=pyfiglet.figlet_format('          50K_Flex ')
 def sped(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(0.001)
-
-def color_figlet(text, color):
-    ascii_art = pyfiglet.figlet_format(text)
-    return "".join([color + line + "\n" for line in ascii_art.splitlines()])
-
-SK = color_figlet('TEAM', G)
-saa = color_figlet('ALKAPOS', G)
-sk2 = color_figlet('VODAFONE', Y)
-alkapos = color_figlet('50K_Flex', G)
-
+        for c in s + '\n':
+        	sys.stdout.write(c)
+        	sys.stdout.flush()
+        	time.sleep(0.001)
+        	def alkapos():
+        		print("")
 sped(R+s)
-sped(SK)
-sped(saa)
+sped(G+SK)
+sped(G+saa)
 sped(R+m)
-sped(sk2)
+sped(Y+sk2)
 sped(R+g)
-sped(alkapos)
+sped(G+alkapos)
 sped(R+g)
-
 webbrowser.open("https://t.me/TEAM_ALKAP0S")
-
 
 SETTINGS_FOLDER = "TAEM_ALKAP00S"
 SETTINGS_FILE = os.path.join(SETTINGS_FOLDER, "settings.json")
