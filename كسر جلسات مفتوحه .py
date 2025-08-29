@@ -16,6 +16,7 @@ import pyfiglet
 import webbrowser
 import pwinput  
 
+
 init(autoreset=True)
 
 G = Fore.GREEN
@@ -26,25 +27,31 @@ B = Fore.BLUE
 s=("□■"*30)
 m=("□■"*30)
 g=("□■"*30)
-SK = pyfiglet.figlet_format('                TEAM')
-saa = pyfiglet.figlet_format('       ALKAPOS')
-sk2=pyfiglet.figlet_format('        VODAFONE')
-alkapos=pyfiglet.figlet_format('          50K_Flex ')
+
 def sped(s):
-        for c in s + '\n':
-        	sys.stdout.write(c)
-        	sys.stdout.flush()
-        	time.sleep(0.001)
-        	def alkapos():
-        		print("")
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.001)
+
+def color_figlet(text, color):
+    ascii_art = pyfiglet.figlet_format(text)
+    return "".join([color + line + "\n" for line in ascii_art.splitlines()])
+
+SK = color_figlet('TEAM', G)
+saa = color_figlet('ALKAPOS', G)
+sk2 = color_figlet('VODAFONE', Y)
+alkapos = color_figlet('50K_Flex', G)
+
 sped(R+s)
-sped(G+SK)
-sped(G+saa)
+sped(SK)
+sped(saa)
 sped(R+m)
-sped(Y+sk2)
+sped(sk2)
 sped(R+g)
-sped(G+alkapos)
+sped(alkapos)
 sped(R+g)
+
 webbrowser.open("https://t.me/TEAM_ALKAP0S")
 
 
