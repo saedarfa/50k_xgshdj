@@ -16,6 +16,7 @@ import pyfiglet
 import webbrowser
 import pwinput  
 
+init(autoreset=True)
 
 G = Fore.GREEN
 R = Fore.RED
@@ -46,7 +47,6 @@ sped(G+alkapos)
 sped(R+g)
 webbrowser.open("https://t.me/TEAM_ALKAP0S")
 
-init(autoreset=True)
 
 SETTINGS_FOLDER = "TAEM_ALKAP00S"
 SETTINGS_FILE = os.path.join(SETTINGS_FOLDER, "settings.json")
